@@ -42,6 +42,7 @@ See `docs/container_quickstart.md` for details and troubleshooting.
 
 - `scripts/run_container.sh` (the canonical `docker run ...` with mounts/env)
 - `compose.yaml` (the same configuration via Docker Compose)
+- If you use `jetson-containers` for the CUDA-13 “compiled everything” build: `docs/jetson_containers_recipe.md`
 
 ## Docs
 
@@ -49,3 +50,4 @@ See `docs/container_quickstart.md` for details and troubleshooting.
 - `docs/data_layout.md` (what lives on the data disk)
 - `docs/runbook.md` (detailed runbook, based on our local setup)
 - `docs/smoke_tests.md` (GPU + image fingerprint checks)
+- `docs/jetson_containers_recipe.md` (the `jetson-containers` build/run workflow we use)
