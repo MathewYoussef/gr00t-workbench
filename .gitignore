@@ -1,0 +1,35 @@
+# secrets / local config
+.env
+
+# python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+.venv/
+
+# editors
+.DS_Store
+.idea/
+.vscode/
+
+# local outputs (keep data/caches out of git)
+data/
+datasets/
+checkpoints/
+outputs/
+runs/
+logs/
+
+# huggingface / model caches (should not live under repo, but ignore just in case)
+hf_cache_root/
+hf_cache/
+models/
+
+# archives
+*.tar
+*.tar.gz
+*.zip
+

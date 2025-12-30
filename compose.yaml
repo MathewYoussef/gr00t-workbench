@@ -1,0 +1,17 @@
+services:
+  gr00t:
+    image: ${GR00T_IMAGE:-nvcr.io/nvidia/pytorch:25.11-py3}
+    command: /bin/bash
+    stdin_open: true
+    tty: true
+    ipc: host
+    ulimits:
+      memlock: -1
+      stack: 67108864
+    environment:
+      HF_HOME: ${HF_HOME:-/mnt/nvme1/hf_cache_root}
+    volumes:
+      - ${ISAAC_GR00T_DIR:-../Isaac-GR00T}:/workspace/Isaac-GR00T
+      - ${DATA_DIR:-/mnt/nvme1}:/mnt/nvme1
+    gpus: all
+
