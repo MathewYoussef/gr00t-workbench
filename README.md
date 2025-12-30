@@ -38,6 +38,11 @@ bash docker/setup_blackwell_env.sh
 
 See `docs/container_quickstart.md` for details and troubleshooting.
 
+## Where the “recipe” is
+
+- `scripts/run_container.sh` (the canonical `docker run ...` with mounts/env)
+- `compose.yaml` (the same configuration via Docker Compose)
+
 ## Docs
 
 - `docs/container_quickstart.md` (how to start the container)
